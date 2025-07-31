@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/base.css')}}">
+    <link rel="icon" type="image/png" href="{{url_for('static', filename='img/Logo.png')}}">
+    <title>{% block title %}{% endblock %}</title>
+</head>
+
+<body>
+    <header id="header">
+        <div id="logo">
+            <a href="{{url_for('index')}}"><img src="{{url_for('static', filename='img/Logo.png')}}" height="42px" width="44px"></a>
+            <h2>Hope Bank</h2>
+        </div>
+        <nav id="nav">
+            <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu"
+                aria-expanded="false">Menu
+                <span id="hamburger"></span>
+            </button>
+            <ul id="menu" role="menu">
+                <li><a class="ancora" href="#">Para Você</a>
+                    <ul>
+                        <li><a href="#">Cartões HB</a></li>
+                        <li><a href="#">Mimos Hopper</a></li>
+                        <li><a href="#">Investimentos</a></li>
+                        <li><a href="#">Serviços</a></li>
+                    </ul>
+                </li>
+                <li><a class="ancora" href="./html/ajuda.html">Ajuda</a>
+                    <ul>
+                        <li><a href="./html/bot.html">Fale com a SOI</a></li>
+                        <li><a href="#">Fale com um atendente</a></li>
+                        <li><a href="#">Chat Online</a></li>
+                        <li><a href="#">Contatos</a></li>
+                    </ul>
+                <li>
+                <li><a class="ancora" href="./html/SobreNós.html">Sobre Nós</a>
+                    <ul>
+                        <li><a href="#">Nossa História</a></li>
+                        <li><a href="#">Dúvidas</a></li>
+                        <li><a href="#">Nossa Sede</a></li>
+                        <li><a href="#">Nossa Equipe</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div class="btn-hopper">
+            <button id="btn-hopper"><a href="./html/index1.html">Seja um Hopper</a></button>
+        </div>
+    </header>
+
+    <footer>
+        <div class="container">
+            <div class="container-links">
+                <div class="Lista-box">
+                    <ul>
+                        <h6 class="texto-principal"><b>Hoper Invest</b></h6>
+                        <li>
+                            <a href="" class="link-fotos">
+                                Simular empréstimo
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Simular financiamento
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="link-fotos">
+                                Simular investimentos
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="link-fotos">
+                                Fundos Imbiliarios
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="link-fotos">
+                                Ações
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="Lista-box">
+                    <ul>
+                        <h6 class="texto-principal"><b>Nossos Serviços</b></h6>
+                        <li>
+                            <a href="">
+                                Hope Bag
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Hope Courses
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Hope Invest
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Beneficios
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Aula de investimentos
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="Lista-box">
+                    <ul>
+                        <h6 class="texto-principal"><b>Informações</b></h6>
+                        <li>
+                            <a href="">Dúvidas Frequentes</a>
+                        </li>
+
+                        <li>
+                            <a href="">Cartão Hope Bank</a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Vantagens de ser Hopper
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Bolsas de Estudos
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="Redes-sociais">
+                    <ul>
+                        <h6 class="texto-principal"><b>MIDIAS SOCIAIS</b></h6>
+                        <li class="Facebook">
+                            <a href="https://www.facebook.com/profile.php?id=100082083241390" target="_blank"
+                                class="link-fotos">
+                                <img src="./img/facebook.png" class="imagens-redes">
+                            </a>
+                            <a href="https://www.instagram.com/hopebank.soi/" target="_blank" class="link-fotos">
+                                <img src="./img/instagram.png" class="imagens-redes">
+                            </a>
+                            <a href="https://www.linkedin.com/in/hope-bank-791a13240/" target="_blank"
+                                class="link-fotos">
+                                <img src="./img/linkedin.png" class="imagens-redes">
+                            </a>
+                            <a href="" class="link-fotos">
+                                <img src="./img/youtube.png" class="imagens-redes">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/header.js"></script>
+</body>
+
+</html>

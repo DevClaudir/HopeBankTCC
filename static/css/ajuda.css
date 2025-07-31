@@ -1,0 +1,259 @@
+/* Inicio Header */
+#header {
+  box-sizing: border-box;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #FFF;
+}
+
+#menu {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.ancora {
+  color: #000;
+}
+
+#menu li a {
+  display: block;
+  padding: 0.5em;
+  font-family: sans-serif;
+  font-size: 1.1em;
+}
+
+#menu img {
+  height: 20px;
+  width: 20px;
+}
+
+.lista-com-img {
+  display: flex;
+  align-items: center;
+}
+
+#btn-mobile {
+  display: none;
+}
+
+#logo {
+font-size: 1.2rem;
+font-weight: bold;
+display: flex;
+align-items: center;
+gap: 1em;
+color: white;
+font-family: Sans-serif;
+}
+
+#logo h2 {
+  color: #000;
+}
+
+#btn-hopper {
+border: none;
+background-color: #0A3FFE;
+padding: 10px;
+border-radius: 5px;
+color: white;
+}
+
+#btn-hopper a {
+  color: white;
+}
+/* Fim Header */
+
+
+
+/* Inicio DropDown Menu */
+#nav ul ul {
+  display: none;
+  transition: all 0.5s;
+}
+
+#nav ul li:hover ul {
+  transition: .5s ease-in-out;
+  display: block;
+  position: absolute;
+  background-color: rgb(227, 227, 227);
+  width: 10em;
+  text-align: center;
+}
+
+#nav ul li ul li a {
+  color: #000;
+  margin: 5px 0 5px 0;
+  transition: .3s ease;
+}
+
+#nav ul li ul li a:hover {
+  margin-left: 10px;
+  color: #426DFF;
+  transition: .3s ease;
+}
+/* Fim DropDown Menu */
+
+
+
+.containerajuda{
+    margin: 1%;
+}
+
+.boxduvidas{
+    font-family: sans-serif;
+    color: #0A3FFE;
+    padding:10%;
+    background: rgb(37, 36, 36);
+    margin-bottom: 15%;
+}
+
+.h1-primeiro{
+    font-size: 60px;
+}
+
+.b{
+    padding-top: 2%;
+    margin: 0% 1%;
+    letter-spacing: -0.02em;
+    color: black;
+}
+
+.b:hover{
+    margin-top: 1px;
+    border-bottom: 3px solid #0A3FFE;
+}
+
+.titulo{
+    font-family: sans-serif;
+    font-size: 20px;
+    color: #FFF;
+    background: rgb(37, 36, 36) ;
+    width: 100%;
+    height: 60px;
+    padding: 50px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hide {
+    font-family: sans-serif;
+    color: black;
+    width: 100%;
+    background-color: #fafafa;
+    padding: 20px;
+    box-sizing: border-box;
+    font-size: 1.1990rem;
+    line-height: 1.32;
+}
+
+.titulo img{
+    transition: 1s;
+    width: 25px;
+    cursor: pointer;
+}
+
+.sectionShow p{
+    display: block;
+}
+
+.sectionHide p{
+    display: none;
+}
+
+.b {
+    font-size: 40px;
+    font-family: Arial;
+}
+
+/* Inicio responsivo Header */
+@media (max-width: 900px) {
+  #menu {
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 70px;
+    right: 0px;
+    background: #eee;
+    transition: 0.6s;
+    z-index: 1000;
+    height: 0px;
+    visibility: hidden;
+    overflow-y: hidden;
+    text-align: center;
+  }
+  #menu .ancora {
+      color: #000;
+  }
+  #nav ul li:hover ul {
+      display: none;
+  }
+  #nav.active #menu {
+    height: calc(100vh - 70px);
+    visibility: visible;
+    overflow-y: auto;
+  }
+  #menu a {
+    padding: 1rem 0;
+    margin: 0 1rem;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+    display: flex;
+    justify-content: center;
+  }
+  #btn-hopper {
+    display: none;
+  }
+  #btn-mobile {
+    display: flex;
+    padding: 0.5rem 1rem;
+    font-size: 1.2em;
+    border: none;
+    background: none;
+    cursor: pointer;
+    gap: 0.5rem;
+    color: #000;
+  }
+  #hamburger {
+    border-top: 2px solid;
+    width: 20px;
+  }
+  #hamburger::after, #hamburger::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: currentColor;
+    margin-top: 5px;
+    transition: 0.3s;
+    position: relative;
+  }
+  #nav.active #hamburger {
+    border-top-color: transparent;
+  }
+  #nav.active #hamburger::before {
+    transform: rotate(135deg);
+  }
+  #nav.active #hamburger::after {
+    transform: rotate(-135deg);
+    top: -7px;
+  }
+}
+/* Fim responsivo Header */
+
+/* responsivo footer */
+@media (max-width:770px) {
+    .Lista-box{
+        width: 45%;
+        padding: auto;
+    }
+    
+  }
+  
+  @media (max-width:600px) {
+    .Lista-box{
+        width: 100%;
+    }
+  }

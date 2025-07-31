@@ -1,0 +1,232 @@
+body{
+    margin: 0;
+    background-color: #426DFF;
+}
+
+           /* MISSÃO, VISÃO E VALORES*/
+main{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 20px 0 20px;
+}
+
+/* HISTORIA DA EMPRESA*/
+
+.container-2 {  
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    max-width: 100%;
+    grid-auto-flow: row;
+    justify-content:stretch;
+    grid-template-areas:
+    "imagen texto"
+    "texto-2 imagen-2"
+    "imagen-3 texto-3";
+}
+
+.imagen{ 
+    grid-area: imagen; 
+}
+.imagen img{
+    display: flex;
+    justify-content: stretch;
+    width: 100%;
+    height: 100%;
+}
+.texto { 
+    grid-area: texto;
+    text-align: center;
+    font-size: 30px;
+    background-color:#ffffff; 
+}
+
+.imagen-2 { 
+    grid-area: imagen-2; 
+}
+.imagen-2 img{
+    display: flex;
+    justify-content: stretch;
+    width: 100%;
+    height: 100%;
+}
+
+.texto-2 { 
+    grid-area: texto-2; 
+    text-align: center;
+    font-size: 30px;
+    background-color:#ffffff; 
+}
+
+.imagen-3 { 
+    grid-area: imagen-3; 
+
+}
+
+.imagen-3 img{
+    display: flex;
+    justify-content: stretch;
+    width: 100%;
+    height: 100%;
+
+}
+.texto-3 { 
+    grid-area: texto-3; 
+    text-align: center;
+    font-size: 30px;
+    background-color:#ffffff; 
+}
+.lista-conteudo{
+    text-align: justify;
+    margin: 10px 20px 10px 20px;
+}
+
+        /*FIM M,V E V */
+
+        /* FUNDADORES */
+.container-alinhamento{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 35px 0 35px;
+    justify-content: center;
+}
+.container-molduras{
+    height: 22em;
+    width: 22em;
+    text-align: center;
+    overflow:hidden;
+    margin: 0 auto;
+    border-radius:5px;
+    margin: 10px;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+.container-molduras .col img{
+    position:relative;
+    z-index:20;
+    border-radius: 50%;
+    display: block;
+    height: 200px;
+    width: 200px;
+    border: 5px solid rgb(43, 46, 13);
+    object-fit: cover;
+    margin: 20px auto;
+}
+.col .descrição{
+    color:#ffffff;
+    font-size: 30px;
+    font-weight: 500;
+    padding: 10px;
+    line-height: 25px;
+}
+
+.descrição p {
+    font-family: Arial;
+}
+
+.fundadores {
+    font-family: sans-serif;
+    font-size: 2.7em;
+    margin-bottom: 0.9em;
+    letter-spacing: 1px;
+}
+
+.fundadores{
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.lista-conteudo ul li {
+    padding: 2px 0 2px 0;
+}
+
+/* responsivo Sobre Nós */
+@media (max-width: 1200px){
+    .container-2 {  
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .container-alinhamento{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .container-molduras{
+        height: 20em;
+        width: 20em;
+        text-align: center;
+        overflow:hidden;
+        margin: 0 auto;
+        border-radius:5px;
+        margin-top: 5px;
+        margin-bottom: 20px;
+        background: rgba( 255, 255, 255, 0.25 );
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 4px );
+        -webkit-backdrop-filter: blur( 4px );
+        border-radius: 10px;
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+    }
+    .container-molduras .col img{
+        position:relative;
+        z-index:20;
+        border-radius: 50%;
+        display: block;
+        height: 200px;
+        width: 200px;
+        border: 5px solid rgb(17, 17, 5);
+        object-fit: cover;
+        margin: 20px auto;
+    }
+    
+}
+
+@media (max-width: 1200px){
+    .texto { 
+        font-size: 15px; 
+        margin-bottom: 10px;
+    }
+    .texto-2 { 
+        font-size: 15px; 
+        margin-bottom: 10px;
+    }
+    .texto-3 { 
+        font-size: 15px;
+        margin-bottom: 10px; 
+    }
+    .lista-conteudo{
+        text-align: justify;
+        margin: 5px 10px 5px 10px;
+    }
+    .container-historia{
+        width: auto;
+        height: 200px;
+        background-color:rgb(255, 244, 244);
+        margin: 0;
+        border-radius: 0;
+        padding: 10px;
+        margin: 20px;
+    }
+}
+
+
+
+/* Inicio responsivo Footer */
+@media (max-width: 756px){
+    .Titulo-historia-empresa{
+        font-size: 10px;
+    }
+    .Texto-historia{
+        font-size: 16px;
+        width: 100%;
+
+    }
+}
+/* Fim responsivo Footer */

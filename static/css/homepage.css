@@ -1,0 +1,266 @@
+/* Inicio Home Page */
+.container-homepage {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+}
+
+.text-homepage {
+    text-align: center;
+}
+
+.text-homepage h2 {
+    color: #000;
+    font-size: 3em;
+    font-family: Arial;
+    letter-spacing: 1px;
+    margin-bottom: 0.9em;
+    font-weight: 500;
+}
+
+.text-homepage span {
+    font-family: Sans-serif;
+    font-size: 1.1em;
+    font-weight: 500;
+}
+
+.text-homepage a {
+    position: relative;
+    color: #FFF;
+    background-color: #0A3FFE;
+    padding: 8px 15px;
+    font-family: Sans-serif;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.text-homepage a:hover {
+    border-bottom: 3px solid #000;
+}
+/* Fim Hope Page */
+
+
+
+/* Inicio Cards Vantagens */
+.box-fundo-cards-homepage {
+    margin-left: auto;
+    margin-right: auto;
+    transform: translateY(5em);
+    margin-bottom: 10px;
+    background-color: #426DFF;
+    min-height: 70vh;
+    width: 92%;
+    border-radius: 1em;
+}
+
+.container-cards {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 70vh;
+    width: 100%;
+}
+
+.textos-cards-homepage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 15vh;
+}
+
+.textos-cards-homepage h2 {
+    font-family: Sans-serif;
+    font-weight: 500;
+    font-size: 2em;
+    text-align: center;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.textos-cards-homepage span {
+    font-family: Arial;
+    font-weight: 500;
+    font-size: 1.1em;
+    text-align: center;
+} 
+
+.card2 {
+    width: 26em;
+}
+
+.card1,.card3 {
+    height: 19em;
+    width: 24em;
+    transition: 0.5s;
+    justify-content: center;    
+}
+
+.img-card2 {
+    width: 220px;
+    height: 160px;
+    margin-top: 1.4em;
+    margin-bottom: 2em;
+}
+
+.img-card1, .img-card3 {
+    height: 200px;
+    width: 200px;
+    margin-bottom: 0.4em;
+}
+
+.conteudo-card1 h3, .conteudo-card2 h3, .conteudo-card3 h3 {
+    font-size: 1.7em;
+    font-weight: 600;
+    color: #222;
+    font-family: Jetbrains-Mono;
+}
+
+.texto-card1 p, .texto-card2 p, .texto-card3  p{
+    font-family: Arial;
+    font-size: 1.2em;
+    text-align: center;
+    margin: 1.8em 3.5em 0 3.5em;
+    color: #FFF;
+}
+
+.container-btn {
+    display: flex;
+    justify-content: center;
+}
+
+.container-btn a {
+    position: relative;
+    background: #0030DB;
+    color: #FFF;
+    text-decoration: none;
+    padding: 0.6em 0.9em;
+    font-weight: 400;
+    font-size: 1.1em;
+    transition: 0.3s;
+    font-family: sans-serif;
+    border-bottom: 4px solid #000;
+    margin-top: -30px;
+    margin-bottom: 50px;
+}
+
+.container-btn a:hover {
+    cursor: pointer;
+}
+/* Final Cards Vantagens */
+
+
+/* Inicio Ações do Úsuario */
+.container-acoes {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1.5em;
+    margin-top: 1em;
+    font-size: 1.1em;
+    margin-bottom: 4em;
+}
+
+.container-acoes img {
+    height: 128px;
+    width: 128px;
+}
+
+.pix, .ted, .FII, .HopeInvest, .HopeBag, .SimularFinanciamento {
+    border-radius: 0.5em;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 8em;
+    width: 26em;
+    background-color: rgb(161, 161, 161);
+    color: #000;
+}
+
+.texto-FII, .texto-HopeBag, .texto-Financiamento, .texto-ted {
+    text-align: center;
+}
+/* Final Ações do Úsuario */
+
+
+
+/* Inicio Vantagens parcerias */
+.vantagens-parcerias {
+    margin-top: 4em;
+}
+
+.box-fundo-vantagens-parcerias {  
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 1em 1em;
+    grid-template-areas:
+    "textos-vantagens-parceria img-lateral";
+    background-color: #eee;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img-lateral img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    transform: scaleX(-1);
+}
+
+.container-logo-parceiros {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+    width: 100%;
+}
+
+.ios p, .spotify p, .uber p, .aslapp p {
+    font-family: Sans-serif;
+    font-size: 1.1em;
+    color: #000;
+    margin-top: 0.4em;
+    margin-bottom: 0.5em;
+    letter-spacing: 1px;
+}
+
+.ios span, .spotify span, .uber span, .aslapp span {
+    display: inline-block;
+    width: 13em;
+    font-family: Sans-serif;
+    font-size: 1.2em;
+    color: #000;
+    margin-top: 0.4em;
+    margin-bottom: 0.5em;
+}
+
+.ios, .spotify, .uber, .aslapp {
+    text-align: center;
+}
+
+.texto-titulo-vantagens-parcerias {
+    text-align: left;
+    position: absolute;
+    padding: 3.5em 0 0 5em;
+}
+
+.texto-titulo-vantagens-parcerias p {
+    font-family: Sans-serif;
+    font-size: 1.1em;
+    color: #000;
+    line-height: 1.5em;
+}
+
+.texto-titulo-vantagens-parcerias span {
+    font-family: system-ui, sans-serif;
+    font-size: 1.7em;
+    color: #000;
+    line-height: 1.4em;
+    letter-spacing: 1px;
+    font-weight: normal;
+}
+/* Fim Vantagens parcerias */

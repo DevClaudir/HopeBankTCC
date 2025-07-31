@@ -1,0 +1,109 @@
+body {
+    background-color: #426dff;
+    font-family: Arial, Helvetica, sans-serif;
+   
+}
+.logo{
+    color: white;
+    font-size: 70px;
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    
+}
+
+.titulo{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+
+
+.paragrafo-texto{
+    margin-top: 150px;
+    margin-left: 100px;
+
+}
+
+p{
+    font-family: Graphik-Medium, Graphik-Regular, "Gotham SSm A", "Gotham SSm B", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin: 10px;
+    text-align: left;
+    font-weight: 500;
+    letter-spacing: -0.03em;
+    font-size: 200%;
+    line-height: 1.2;
+    color: rgb(255, 255, 255);
+    
+}
+
+
+.formulario{
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(110%, -50%);
+    padding: 80px;
+    padding-top: 100px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px #000;
+    width: 370px;
+}
+
+.Email{
+    border: none;
+    border-bottom: 1px solid black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0;
+    text-align: left;
+}
+
+ .btn-index-hoper{
+    margin: 1%;
+    padding: 15px;
+    width: 100%;
+    border-radius: 10px;
+    background-color: #0A3FFE;
+    border: none;
+    cursor: pointer;
+    color: #FFF;
+}
+
+a {
+    color: #FFF;
+    text-decoration: none;
+}
+.titulo {
+    margin-top: auto;
+    font-family: Sans-serif;
+    font-weight: 500;
+    font-size: 1.5em;
+}
+@media (max-width: 900px) {
+    .paragrafo-texto{
+        font-size: 15px;
+        margin: 50px;
+    }
+    .formulario{
+        background-color: #FFF;
+        top: 65%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin-top: 20em;
+        padding: 80px;
+        padding-top: 100px;
+        border-radius: 20px;
+        box-shadow: 5px 5px 5px #000;
+        width: 95%;
+        margin: 0 auto 0 auto;
+    }
+    .titulo {
+        width: 100%;
+        height: 50%;
+    }
+}

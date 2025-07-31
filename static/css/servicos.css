@@ -1,0 +1,211 @@
+.divtitulodapaginaprincipal, h1{
+    text-align: center  ;
+    margin-bottom: 10%;
+}
+
+
+.container-servicos{  display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "card-pix card-pix . card-tranferencia card-tranferencia"
+      "card-pix card-pix . card-tranferencia card-tranferencia"
+      ". . . . ."
+      "card-cartoes card-cartoes . card-investimentos card-investimentos"
+      "card-cartoes card-cartoes . card-investimentos card-investimentos"
+      ". . . . ."
+      "card-hopebag card-hopebag .card-hopeinvest card-hopeinvest"
+      "card-hopebag card-hopebag . card-hopeinvest card-hopeinvest";
+  }
+  /*card1 começo*/
+
+
+  .divtitulodapaginaprincipal{
+    margin-bottom: 15%;
+  }
+
+  .card-pix { grid-area: card-pix; 
+    
+    box-sizing: border-box;
+    border: solid black 1px;
+    padding: 1.5rem;
+    margin: 2rem;
+   background: rgb(37, 36, 36);
+    color: white;
+}
+
+
+
+    .titulocard1-pix, h2{
+        font-size: 25px;
+        font-family: sans-serif;
+        cursor: none;
+        margin: 1.6rem 0;
+        line-height: 1.5rem;
+    }
+
+
+    .paragrafodocard1texto, p{
+        font-size: 20px;
+        font-family: sans-serif;
+        margin-bottom: 1.5rem;
+
+    }
+
+
+    .saibamaistitulo, a{
+      color: white;
+      transition: all 0.3s ease;
+    }
+
+
+    .saibamaistitulo, a:hover{
+      color: #0A3FFE;
+      padding-left: 7px;
+    }
+
+    /*fim do card1*/
+
+
+
+    /*inicio card 2*/
+  .card-tranferencia { grid-area: card-tranferencia; 
+  
+    box-sizing: border-box;
+    border: solid black 1px;
+    padding: 1.5rem;
+    margin: 2rem;
+   background: rgb(37, 36, 36);
+    color: white;
+  }
+
+ 
+
+
+ 
+
+/*fim card 2*/
+/*inicio card 3*/
+  .card-cartoes { grid-area: card-cartoes; border: solid black 1px;
+       
+    box-sizing: border-box;
+    border: solid black 1px;
+    padding: 1.5rem;
+    margin: 2rem;
+   background: rgb(37, 36, 36);
+    color: white;}
+  /*fim card 3*/
+
+  /*iniciocard4*/
+  .card-investimentos { grid-area: card-investimentos;border: solid black 1px;
+      
+    box-sizing: border-box;
+    border: solid black 1px;
+    padding: 1.5rem;
+    margin: 2rem;
+   background: rgb(37, 36, 36);
+    color: white; }
+  /*fim card 4*/
+    .card-hopebag { grid-area: card-hopebag; border: solid black 1px;
+      
+      box-sizing: border-box;
+      border: solid black 1px;
+      padding: 1.5rem;
+      margin: 2rem;
+     background: rgb(37, 36, 36);
+      color: white;}
+  
+  .card-hopeinvest{ grid-area: card-hopeinvest;border: solid black 1px;
+      
+    box-sizing: border-box;
+    border: solid black 1px;
+    padding: 1.5rem;
+    margin: 2rem;
+   background: rgb(37, 36, 36);
+    color: white; }
+  
+    footer{
+      background-color: rgb(37, 36, 36);
+      padding: 50px 0;
+  }
+  
+  .container {
+      max-width: 1400px;
+      padding:0 4%;
+      margin:auto;
+  }
+  
+  .container-links{
+      display:flex;
+      flex-wrap: wrap;
+  }
+  
+  .Lista-box{
+      width: 25%;
+      padding:0 15px ;
+  }
+  
+  .Lista-box h6{
+      font-size: 22px;
+      color: #003bfd;
+      margin-bottom: 20px;
+      font-weight: 500;
+      position: relative;
+      text-transform: uppercase;
+  }
+  
+  .Lista-box ul li{
+      margin:10px 0;
+  }
+  
+  .Lista-box ul li a{
+      border: none;
+      font-size: 16px;
+      text-transform: capitalize;
+      text-decoration: none;
+      color: #eee;
+      font-weight: 300;
+      display: block;
+      transition: all 0.3s ease;
+  }
+  
+  .Lista-box ul li a:hover{
+      color: rgb(180, 170, 170);
+      padding-left: 10px;
+  }
+  .Redes-sociais a{
+      margin-left: 7px;
+      border:none;
+  }
+  .Redes-sociais h6{
+      font-size: 22px;
+      color: #d6e0ff;
+      margin-bottom: 20px;
+      font-weight: 500;
+      position: relative;
+      text-transform: uppercase;
+  }
+  .Redes-sociais ul li a{
+      border:none;
+  }
+  .Facebook{
+      display: flex;
+  }
+  
+  /* Responsivo footer */
+  @media (max-width:770px) {
+      .Lista-box{
+          width: 45%;
+          padding: auto;
+      }
+      
+  }
+  
+  @media (max-width:600px) {
+      .Lista-box{
+          width: 100%;
+      }
+  }

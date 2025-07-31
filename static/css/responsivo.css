@@ -1,0 +1,19 @@
+@media (max-width: 800px) {
+        
+    .divtitulodapaginaprincipal{
+     padding-left: 50px;
+        width: 250px;
+    }
+    .card-pix{
+        grid-area: card-pix;
+        text-align: center;
+        width:250px;
+        height:250px;
+    }
+    .card-tranferencia{
+        grid-area: card-tranferencia;
+        text-align: center;
+        width:250px;
+        height:250px;
+    }
+ }

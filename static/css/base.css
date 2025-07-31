@@ -1,0 +1,362 @@
+:root {
+    --cor-fundo : rgb(37, 36, 36);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Inicio Header */
+#header {
+    box-sizing: border-box;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #FFF;
+}
+  
+#menu {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.ancora {
+    color: #000;
+}
+  
+#menu li a {
+    display: block;
+    padding: 0.5em;
+    font-family: sans-serif;
+    font-size: 1.1em;
+}
+
+#menu img {
+    height: 20px;
+    width: 20px;
+}
+
+.lista-com-img {
+    display: flex;
+    align-items: center;
+}
+
+#btn-mobile {
+    display: none;
+}
+
+#logo {
+  font-size: 1.2rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  color: white;
+  font-family: Sans-serif;
+}
+
+#logo h2 {
+    color: #000;
+}
+
+#btn-hopper {
+  border: none;
+  background-color: #0A3FFE;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+}
+
+#btn-hopper a {
+    color: white;
+}
+/* Fim Header */
+
+
+
+/* Inicio DropDown Menu */
+#nav ul ul {
+    display: none;
+    transition: all 0.5s;
+}
+
+#nav ul li:hover ul {
+    transition: .5s ease-in-out;
+    display: block;
+    position: absolute;
+    background-color: rgb(227, 227, 227);
+    width: 10em;
+    text-align: center;
+}
+
+#nav ul li ul li a {
+    color: #000;
+    margin: 5px 0 5px 0;
+    transition: .3s ease;
+}
+
+#nav ul li ul li a:hover {
+    margin-left: 10px;
+    color: #426DFF;
+    transition: .3s ease;
+}
+/* Fim DropDown Menu */
+
+
+
+
+
+/* Inicio responsivo Header */
+@media (max-width: 900px) {
+    #menu {
+      display: block;
+      position: absolute;
+      width: 100%;
+      top: 70px;
+      right: 0px;
+      background: #eee;
+      transition: 0.6s;
+      z-index: 1000;
+      height: 0px;
+      visibility: hidden;
+      overflow-y: hidden;
+      text-align: center;
+    }
+    #menu .ancora {
+        color: #000;
+    }
+    #nav ul li:hover ul {
+        display: none;
+    }
+    #nav.active #menu {
+      height: calc(100vh - 70px);
+      visibility: visible;
+      overflow-y: auto;
+    }
+    #menu a {
+      padding: 1rem 0;
+      margin: 0 1rem;
+      border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+      display: flex;
+      justify-content: center;
+    }
+    #btn-hopper {
+      display: none;
+    }
+    #btn-mobile {
+      display: flex;
+      padding: 0.5rem 1rem;
+      font-size: 1.2em;
+      border: none;
+      background: none;
+      cursor: pointer;
+      gap: 0.5rem;
+      color: #000;
+    }
+    #hamburger {
+      border-top: 2px solid;
+      width: 20px;
+    }
+    #hamburger::after, #hamburger::before {
+      content: '';
+      display: block;
+      width: 20px;
+      height: 2px;
+      background: currentColor;
+      margin-top: 5px;
+      transition: 0.3s;
+      position: relative;
+    }
+    #nav.active #hamburger {
+      border-top-color: transparent;
+    }
+    #nav.active #hamburger::before {
+      transform: rotate(135deg);
+    }
+    #nav.active #hamburger::after {
+      transform: rotate(-135deg);
+      top: -7px;
+    }
+}
+/* Fim responsivo Header */
+
+
+
+/* Inicio responsivo HomePage */
+@media (max-width: 900px) {
+    .box-fundo-cards-homepage {
+        height: 150vh;
+    }
+    .container-homepage {
+        flex-direction: column;
+    }
+    .text-homepage {
+        order: 2;
+    }
+    .img-homepage {
+        width: 100%;
+        height: 85%;
+    }
+}
+/* Fim responsivo HomePage */
+
+
+
+/* Inicio responsivo do Vantagens */
+@media (max-width: 900px) {
+    .container-cards {
+      flex-wrap: wrap;
+    }
+    .card1, .card2, .card3 {
+        margin-top: 1.1em;
+        margin-bottom: 1.1em;
+    }
+    .img-card1, .img-card2, .img-card3 {
+        margin: 0;
+    }
+    .texto-card1 p, .texto-card2 p, .texto-card3 p {
+        margin: 0 0.7em 0 0.7em;
+    }
+    .conteudo-card1 h3, .conteudo-card2 h3, .conteudo-card3 h3{
+        margin-bottom: 0.4em;
+        margin-top: 0.5em;
+    }
+    .texto-card1 p, .texto-card2 p, .texto-card3  p {
+        margin-bottom: 0.5em;
+    }
+    .container-btn {
+        margin-top: 10em;
+    }
+    .textos-cards-homepage h2 {
+        margin-top: 5em;
+        font-size: 1.8em;
+    }
+    .textos-cards-homepage span {
+        margin: 0 0.7em 6em 0.7em;
+    }
+}
+/* Fim responsivo do Vantagens */
+
+
+/* Inicio responsivo vantagens parcerias */
+@media (max-width: 900px){
+    .texto-titulo-vantagens-parcerias {
+        text-align: center;
+        position: relative;
+        align-items: flex-start;
+        padding: 0;
+    }
+    .box-fundo-vantagens-parcerias {
+        display: flex;
+        flex-direction: column;
+    }
+    .container-logo-parceiros {
+        flex-wrap: wrap;
+        gap: 3em;
+    }
+    .img-lateral {
+        display: flex;
+        align-items: flex-end;
+        position: relative;
+    }
+}
+/* Fim responsivo vantagens parcerias */
+
+
+
+/* Inicio Responsivo Cards Ações do Usuário */
+@media (max-width: 900px) {
+  .pix, .ted, .FII, .HopeInvest, .HopeBag, .SimularFinanciamento {
+    width: 60vh;
+    font-family: Arial;
+    text-align: center;
+  }
+}
+/* Fim Responsivo Cards Ações do Usuário */
+
+/* Inicio Rodapé */
+footer{
+    background-color: rgb(37, 36, 36);
+    padding: 50px 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 1400px;
+    padding:0 4%;
+    margin:auto;
+}
+
+.container-links{
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.Lista-box{
+    width: 25%;
+    padding:0 15px ;
+}
+
+.Lista-box h6{
+    font-size: 22px;
+    color: #003bfd;
+    margin-bottom: 20px;
+    font-weight: 500;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.Lista-box ul li{
+    margin:10px 0;
+}
+
+.Lista-box ul li a{
+    border: none;
+    font-size: 16px;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: #eee;
+    font-weight: 300;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.Lista-box ul li a:hover{
+    color: rgb(180, 170, 170);
+    padding-left: 15px;
+}
+.Redes-sociais a{
+    margin-left: 7px;
+    border:none;
+}
+.Redes-sociais h6{
+    font-size: 22px;
+    color: #d6e0ff;
+    margin-bottom: 20px;
+    font-weight: 500;
+    position: relative;
+    text-transform: uppercase;
+}
+.Redes-sociais ul li a{
+    border:none;
+}
+.Facebook{
+    display: flex;
+}
+/* Fim Rodapé */
+
+/* Inicio Responsivo footer */
+@media (max-width:770px) {
+    .Lista-box{
+        width: 45%;
+        padding: auto;
+    }
+    
+  }
+  @media (max-width:600px) {
+    .Lista-box{
+        width: 100%;
+    }
+  }
+  /* Fim Responsivo footer */
